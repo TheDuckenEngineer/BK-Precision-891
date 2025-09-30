@@ -67,7 +67,7 @@ def Experiment(ser, frequencies, numberOfpoints, measurement, voltage):
     # set the measurement voltage, range, speed, measurement, and output mode
     LCRWriter(ser, f'LEVel:AC {voltage}')
     LCRWriter(ser, f'MEASurement:RANGe AUTO')
-    LCRWriter(ser, f'MEASurement:SPEEd 1')
+    LCRWriter(ser, f'MEASurement:SPEEd 2')
     LCRWriter(ser, f'MEASurement:FUNC {measurement}')
     LCRWriter(ser, 'DISP:MODE 1')
     LCRWriter(ser, 'DISP:FONT 0')
